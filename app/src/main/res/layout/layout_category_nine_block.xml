@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f5ffffff"
+        android:orientation="vertical"
+        >
+
+        <!-- 关闭按钮 -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/iv_category_nine_block_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:paddingTop="10dp"
+                android:paddingLeft="15dp"
+                android:paddingStart="15dp"
+                android:paddingRight="15dp"
+                android:paddingEnd="15dp"
+                android:src="@drawable/icon_category_nine_block_close"
+                android:clickable="true"
+                android:contentDescription=""
+                />
+
+        </FrameLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_category_nine_block_area"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_category_nine_block_close"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#60000000"
+        android:clickable="true"
+        />
+
+</LinearLayout>

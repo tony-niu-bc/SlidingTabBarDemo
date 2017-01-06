@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_shell"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/iv_tab_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
+                android:paddingRight="15dp"
+                android:paddingEnd="15dp"
+                android:src="@drawable/icon_tab_more"
+                android:contentDescription=""
+                />
+
+            <com.wzhnsc.slidingtabbardemo.CategoryTabStrip
+                android:id="@+id/cts_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_toLeftOf="@id/iv_tab_more"
+                android:layout_toStartOf="@id/iv_tab_more"
+                android:clipToPadding="false"
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.66dp"
+            android:background="#d1d1d1"
+            />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_area"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <com.wzhnsc.slidingtabbardemo.CategoryNineBlockStyle
+        android:id="@+id/nbs_choice_category"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+
+</FrameLayout>
